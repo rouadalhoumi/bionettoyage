@@ -1,4 +1,5 @@
 import { ReactComponent as PlusIcon } from "./plus.svg?react";
+import { ReactComponent as BalaisIcon } from "./balais.svg?react";
 import { ReactComponent as CloseIcon } from "./close.svg?react";
 import { ReactComponent as BoxIcon } from "./box.svg?react";
 import { ReactComponent as CheckCircleIcon } from "./check-circle.svg?react";
@@ -54,8 +55,27 @@ import { ReactComponent as ChatIcon } from "./chat.svg?react";
 import { ReactComponent as MoreDotIcon } from "./moredot.svg?react";
 import { ReactComponent as AlertHexaIcon } from "./alert-hexa.svg?react";
 import { ReactComponent as ErrorHexaIcon } from "./info-hexa.svg?react";
+import { ReactComponent as AppartementIcon } from "./appartement.svg?react";
+import { ReactComponent as BaguetteMagiqueIcon } from "./baguette-magique.svg?react";
+import { ReactComponent as BouclierExclamationIcon } from "./bouclier-exclamation.svg?react";
+import { ReactComponent as CartesViergesIcon } from "./cartes-vierges.svg?react";
+import { ReactComponent as ControleAccesIcon } from "./controle-dacces.svg?react";
+import { ReactComponent as DortoirIcon } from "./dortoir.svg?react";
+import { ReactComponent as LitIcon } from "./lit.svg?react";
+import { ReactComponent as PoubelleIcon } from "./poubelle.svg?react";
+import { ReactComponent as VotezOuiIcon } from "./votez-oui.svg?react";
 
 export {
+  VotezOuiIcon,
+  PoubelleIcon,
+  LitIcon,
+  DortoirIcon,
+  ControleAccesIcon,
+  CartesViergesIcon,
+  BouclierExclamationIcon,
+  BaguetteMagiqueIcon,
+  AppartementIcon,
+  BalaisIcon,
   ErrorHexaIcon,
   AlertHexaIcon,
   MoreDotIcon,

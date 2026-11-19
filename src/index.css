@@ -3,6 +3,16 @@ layer(base);
 
 @import "tailwindcss";
 
+/* Blur header when modal is open */
+body.modal-open header {
+  filter: blur(4px);
+  transition: filter 0.2s ease;
+}
+
+header {
+  transition: filter 0.2s ease;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
@@ -41,18 +51,19 @@ layer(base);
   --color-white: #ffffff;
   --color-black: #101828;
 
-  --color-brand-25: #f2f7ff;
-  --color-brand-50: #ecf3ff;
-  --color-brand-100: #dde9ff;
-  --color-brand-200: #c2d6ff;
-  --color-brand-300: #9cb9ff;
-  --color-brand-400: #7592ff;
-  --color-brand-500: #465fff;
-  --color-brand-600: #3641f5;
-  --color-brand-700: #2a31d8;
-  --color-brand-800: #252dae;
-  --color-brand-900: #262e89;
-  --color-brand-950: #161950;
+  /* Palette "brand" alignée sur le bleu médical utilisé dans tout l'app (Tailwind blue-*) */
+  --color-brand-25: #eff9ff;
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #2563eb;
+  --color-brand-600: #1d4ed8;
+  --color-brand-700: #1e40af;
+  --color-brand-800: #1e3a8a;
+  --color-brand-900: #172554;
+  --color-brand-950: #0f1a3d;
 
   --color-blue-light-25: #f5fbff;
   --color-blue-light-50: #f0f9ff;
