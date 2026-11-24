@@ -17,7 +17,7 @@ import {
   PencilIcon,
   TrashBinIcon,
   CloseIcon,
-  BoxIconLine,
+  BoxCubeIcon ,
 } from "../../icons";
 
 const FREQUENCES = [
@@ -466,7 +466,7 @@ export default function Protocoles() {
                 {/* Produits liés */}
         <div className="rounded-xl border border-slate-200 bg-white p-4 text-center shadow-sm">
           <div className="mx-auto mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100">
-            <BoxIconLine className="h-4 w-4 text-slate-600" />
+            <BoxCubeIcon BoxCubeIcon className="h-4 w-4 text-slate-600" />
           </div>
           <p className="text-xl font-bold text-slate-700">
             {protocoles.reduce(
@@ -643,7 +643,7 @@ export default function Protocoles() {
                   {produits.length > 0 && (
                     <div className="mb-4">
                       <div className="mb-2 flex items-center gap-1.5">
-                        <BoxIconLine className="h-3.5 w-3.5 text-slate-400" />
+                        <BoxCubeIcon  className="h-3.5 w-3.5 text-slate-400" />
 
                         <span className="text-[10px] font-bold uppercase tracking-wide text-slate-400">
                           Produits associés
@@ -656,7 +656,7 @@ export default function Protocoles() {
                             key={prod.idProduit}
                             className="inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-slate-50 px-2 py-1 text-[10px] font-medium text-slate-600"
                           >
-                            <BoxIconLine className="h-3 w-3 text-slate-400" />
+                            <BoxCubeIcon  className="h-3 w-3 text-slate-400" />
                             {prod.nomProduit}
                           </span>
                         ))}
