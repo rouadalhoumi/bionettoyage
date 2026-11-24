@@ -124,7 +124,7 @@ export default function Services() {
 
       <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-lg font-bold tracking-tight text-slate-900">Services</h1>
+          <h1 className="text-lg font-bold tracking-tight text-slate-900">Liste des services</h1>
         </div>
         <button onClick={() => { setEditTarget(null); setIsModalOpen(true); document.body.classList.add("modal-open"); }}
           className="flex items-center justify-center gap-1.5 rounded-lg bg-blue-700 px-4 py-2.5 text-xs font-bold uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-800 hover:shadow-md">
