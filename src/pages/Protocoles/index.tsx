@@ -422,7 +422,7 @@ export default function Protocoles() {
       </div>
 
       {/* ================= STATS ================= */}
-      <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+      <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-7">
         {FREQUENCES.map((f) => {
           const s = FREQ_STYLES[f];
           const count = protocoles.filter(
@@ -463,6 +463,22 @@ export default function Protocoles() {
             </button>
           );
         })}
+                {/* Produits liés */}
+        <div className="rounded-xl border border-slate-200 bg-white p-4 text-center shadow-sm">
+          <div className="mx-auto mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100">
+            <BoxIconLine className="h-4 w-4 text-slate-600" />
+          </div>
+          <p className="text-xl font-bold text-slate-700">
+            {protocoles.reduce(
+              (total, p) => total + (p.produits?.length || 0),
+              0
+            )}
+          </p>
+          <p className="mt-1 text-[10px] font-semibold uppercase leading-tight tracking-wide text-slate-500">
+            Produits liés
+          </p>
+        </div>
+
       </div>
 
       {/* ================= SEARCH / FILTER ================= */}
