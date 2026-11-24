@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PageMeta from "../../components/common/PageMeta";
 import { produitsAPI, protocolesAPI, Produit } from "../../services/api";
 import {
-  BoxIconLine,
+  BoxCubeIcon,
   CheckCircleIcon,
   ErrorIcon,
   PencilIcon,
@@ -419,7 +419,7 @@ export default function Produits() {
         {/* Total */}
         <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md">
           <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-slate-700 shadow-sm">
-            <BoxIconLine className="h-4.5 w-4.5 text-white" />
+            <BoxCubeIcon className="h-4.5 w-4.5 text-white" />
           </div>
 
           <div>
@@ -624,7 +624,7 @@ export default function Produits() {
                 >
                   <div className="flex flex-col items-center">
                     <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
-                      <BoxIconLine className="h-5 w-5 text-slate-400" />
+                      <BoxCubeIcon className="h-5 w-5 text-slate-400" />
                     </div>
 
                     <p className="text-sm font-medium text-slate-500">
