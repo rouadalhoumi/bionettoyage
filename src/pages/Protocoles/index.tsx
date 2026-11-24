@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 
 import PageMeta from "../../components/common/PageMeta";
 
@@ -466,7 +466,7 @@ export default function Protocoles() {
                 {/* Produits liés */}
         <div className="rounded-xl border border-slate-200 bg-white p-4 text-center shadow-sm">
           <div className="mx-auto mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100">
-            <BoxCubeIcon BoxCubeIcon className="h-4 w-4 text-slate-600" />
+            <BoxCubeIcon className="h-4 w-4 text-slate-600" />
           </div>
           <p className="text-xl font-bold text-slate-700">
             {protocoles.reduce(
